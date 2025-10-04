@@ -1,0 +1,60 @@
+<mvc:View controllerName="routingandnav.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title1}">
+    <Button id="button1" text="GO TO VIEW2" press=".onPress"/>
+    <Table  
+            id="Tab1" alternateRowColors="false"
+            headerText="List f NAV1 items "
+            mode="SingleSelectLeft"
+            width="100%" 
+            items="{Products>/Products}" >
+        <headerToolbar>
+        <Toolbar>
+        <Text text="Search here.."></Text>
+        <ToolbarSpacer/>
+        <SearchField 
+                width="45%"
+                search=".onSearch"/>
+        </Toolbar>
+        </headerToolbar>
+        <columns>
+        <Column>
+        <Text text="ProductID"></Text>
+        </Column>
+        <Column>
+        <Text text="ProductName"></Text>
+        </Column>
+        <Column>
+        <Text text="Region"></Text>
+        </Column>
+        <Column>
+        <Text text="BookedDate"></Text>
+        </Column>
+        <Column>
+        <Text text="DeliveredDate"></Text>
+        </Column>
+        <Column>
+        <Text text="Status"></Text>
+        </Column>
+        <Column>
+        <Text text="Address"></Text>
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem  type="Active" press=".onItemPress">
+        <cells> 
+        <Text text="{Products>ProductID}"></Text>
+        <Text text="{Products>ProductName}"></Text>
+        <Text text="{Products>Region}"></Text>
+        <Text text="{Products>BookedDate}"></Text>
+        <Text text="{Products>DeliveredDate}"></Text>
+        <Text text="{Products>Status}"></Text>
+        <Text text="{Products>Address}"></Text>
+        </cells>
+        </ColumnListItem>
+        </items>
+    </Table>
+    </Page> 
+</mvc:View>

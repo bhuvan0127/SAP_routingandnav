@@ -1,0 +1,94 @@
+{
+  "Products": [
+    {
+      "ProductID": "P1001",
+      "ProductName": "Laptop",
+      "Region": "North",
+      "BookedDate": "2025-09-01",
+      "DeliveredDate": "2025-09-05",
+      "Status": "Delivered",
+      "Address": "12 MG Road, Delhi, India"
+    },
+    {
+      "ProductID": "P1002",
+      "ProductName": "Smartphone",
+      "Region": "South",
+      "BookedDate": "2025-09-03",
+      "DeliveredDate": "2025-09-07",
+      "Status": "Delivered",
+      "Address": "45 Anna Salai, Chennai, India"
+    },
+    {
+      "ProductID": "P1003",
+      "ProductName": "Headphones",
+      "Region": "West",
+      "BookedDate": "2025-09-05",
+      "DeliveredDate": "2025-09-08",
+      "Status": "In Transit",
+      "Address": "221 FC Road, Pune, India"
+    },
+    {
+      "ProductID": "P1004",
+      "ProductName": "Refrigerator",
+      "Region": "East",
+      "BookedDate": "2025-09-06",
+      "DeliveredDate": "2025-09-12",
+      "Status": "Pending",
+      "Address": "78 Park Street, Kolkata, India"
+    },
+    {
+      "ProductID": "P1005",
+      "ProductName": "Microwave",
+      "Region": "North",
+      "BookedDate": "2025-09-07",
+      "DeliveredDate": "2025-09-10",
+      "Status": "Delivered",
+      "Address": "56 Sector 18, Noida, India"
+    },
+    {
+      "ProductID": "P1006",
+      "ProductName": "Tablet",
+      "Region": "South",
+      "BookedDate": "2025-09-08",
+      "DeliveredDate": "2025-09-13",
+      "Status": "In Transit",
+      "Address": "33 MG Road, Bengaluru, India"
+    },
+    {
+      "ProductID": "P1007",
+      "ProductName": "Camera",
+      "Region": "West",
+      "BookedDate": "2025-09-09",
+      "DeliveredDate": "2025-09-14",
+      "Status": "Pending",
+      "Address": "90 Law Garden, Ahmedabad, India"
+    },
+    {
+      "ProductID": "P1008",
+      "ProductName": "Washing Machine",
+      "Region": "East",
+      "BookedDate": "2025-09-10",
+      "DeliveredDate": "2025-09-16",
+      "Status": "Delivered",
+      "Address": "11 Bistupur, Jamshedpur, India"
+    },
+    {
+      "ProductID": "P1009",
+      "ProductName": "Smartwatch",
+      "Region": "North",
+      "BookedDate": "2025-09-11",
+      "DeliveredDate": "2025-09-15",
+      "Status": "In Transit",
+      "Address": "27 Model Town, Ludhiana, India"
+    },
+    {
+      "ProductID": "P1010",
+      "ProductName": "Printer",
+      "Region": "South",
+      "BookedDate": "2025-09-12",
+      "DeliveredDate": "2025-09-18",
+      "Status": "Pending",
+      "Address": "88 Banjara Hills, Hyderabad, India"
+    }
+  ]
+}

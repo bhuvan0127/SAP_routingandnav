@@ -1,0 +1,13 @@
+<mvc:View
+  controllerName="routingandnav.controller.View2"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page id="page2" title="{i18n>title2}">
+    <content>
+      <Button id="button2" text="BACK TO VIEW1" press=".onBack"/>
+      <ObjectHeader id="objHead"
+          title="{Products>Region}"
+          intro="{Products>ProductName}" />
+    </content>
+  </Page>
+</mvc:View>

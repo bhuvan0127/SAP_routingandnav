@@ -1,0 +1,110 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "routingandnav",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.7",
+      "toolsId": "15d571b8-fd1b-4208-874e-891785103c0c"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.140.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "routingandnav.i18n.i18n"
+        }
+      },
+      "Products":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"items.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "controlAggregation": "pages",
+          "controlId": "app",
+          "transition": "slide",
+          "type": "View",
+          "viewType": "XML",
+          "path": "routingandnav.view",
+          "async": true,
+          "viewPath": "routingandnav.view"
+        },
+        "routes": [
+          { 
+            "pattern": "",
+            "name": "RouteView1",
+            "target":"TargetView1"
+            
+          },
+          {
+            "pattern":"detail/{productPath}",
+            "name":"RouteView2",
+            "target":"TargetView2"
+          }
+        ],
+        "targets": {
+          "TargetView1": {
+            "id": "View1",
+            "name": "View1"
+          },
+          "TargetView2":{
+            "id":"View2",
+            "name":"View2"
+          }
+        }
+    },
+    "rootView": {
+      "viewName": "routingandnav.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
